@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box; 
+    font-family: 'Fira Sans', sans-serif;  
+}
+body{
+    margin: 0;
+}
+.navbar{
+    background-color: #0c6168;
+    padding: 0% 2%;
+    text-align: center;
+    
+}
+img{
+    width: 90px;
+    border-radius: 10px;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+.navbar::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* style */
+.navbar h1{
+    padding-top: 10px;
+    margin: 0;
+    color: white;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.menu a{
+    background-color: teal;
+    margin: 7px 0px;
+    padding: 10px 0px;
+    border-radius: 15px;
+}
+.menu a:hover{
+    background-color: gray;
+}
+/* navber end here */
+
+/* profile startv  here */
+    .profile{
+        padding: 130px 10px ;
+        position: relative;
+        text-align: center;
+    }
+    .profile .top-weather{
+        position: absolute;
+        right: 60px;
+        top: 20px;
+        transition: transform 2s;
+    }
+    .profile .top-weather:hover{
+      transform: rotate(360deg);
+    }
+    .profile .bottom-weather{
+        position: absolute;
+        left: 60px;
+        bottom: 20px;
+        transition: transform 2s;
+    }
+    .profile .top-weather:hover{
+      transform: rotate(360deg);
+    }
+
+    
+/* profile end here */
